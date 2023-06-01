@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 폼태그는 서버에 사용자의 입력데이터를 전달할 때 사용. -->
+    <!-- input, textarea, selecet 등은 name 속성이 반드시 필요 -->
+    <!-- 서버로 전달될때 해당 태그의 값을 name으로 받아옴4 -->
+    <form action="https://www.google.com">
+      <h3>타이틀</h3>
+      아이디 :
+      <input type="text" name="id" size="5" placeholder="id입력" /><br />
+      비밀번호 :
+      <input type="password" name="pw" size="5" placeholder="pw입력" /><br />
+      수량 : <input type="number" name="count" id="" /><br />
+      날짜 : <input type="date" name="start_dt" id="" /><br />
+      시군구 선택(name 속성으로 그룹화)
+      <!-- name 을 변수명으로 생각하면 된다. name 안에 적힌 값으로 그룹화 -->
+      <!-- checkbox는 복수 선택 가능 -->
+      <input type="checkbox" name="gu" id="" />강남구
+      <input type="checkbox" name="gu" id="" />관악구
+      <input type="checkbox" name="gu" id="" />금천구
+      <input type="checkbox" name="gu" id="" />서초구
+      <br />
+      전공
+      <!-- radio는 단일 선택, 다중 선택 x -->
+      <input type="radio" name="major" id="" />경영
+      <input type="radio" name="major" id="" />컴퓨터
+      <input type="radio" name="major" id="" />수학
+      <input type="radio" name="major" id="" />통계
+      <br />
+
+      통신사
+      <select name="phone" id="">
+        <option value="">SKT</option>
+        <option value="">KT</option>
+        <option value="">LGU+</option>
+        <option value="">알뜰SKT</option>
+        <option value="">알뜰KT</option>
+        <option value="">알뜰U+</option>
+      </select>
+      <br />
+
+      글
+      <textarea name="topic" id="" cols="50" rows="5"></textarea><br />
+      <input type="file" name="file_a" id="" /><br />
+      <!-- reset타입은 input태그들의 값을 초기화 해준다. -->
+      <!-- value 값에 이름을 줄 수 있음 -->
+      <input type="reset" value="초기화" /><br />
+      <!-- form 태그 값을 전부 서버로 전송할 때 사용 -->
+      <!-- form 태그의 action 값으로 form 값을 전송/ -->
+      <input type="submit" value="제출하기" /><br />
+    </form>
+  </body>
+</html>
