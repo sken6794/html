@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        /* color: rebeccapurple; */
+      }
+      b {
+        color: red;
+      }
+      ul,
+      li {
+        list-style: none;
+      }
+      #a1 {
+        color: burlywood;
+      }
+      .a1 {
+        color: blueviolet;
+      }
+      /* .box(공백)태그 => 하위 모든 자식 */
+      .box p {
+        color: violet;
+      }
+      /* .box(>) 태그 => 하위 직계 자식 */
+      .box > p {
+        color: aquamarine;
+      }
+      input[type="text"] {
+        color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <b>태그</b>
+    <p>태그</p>
+    <ul>
+      <li>태그는</li>
+      <li>태그는</li>
+      <li>태그는</li>
+      <p id="a1">태그(id는 화면에서 고유하다)</p>
+      <p class="a1">태그(id는 화면에서 고유하다)</p>
+      <hr />
+      <div class="box">
+        <p>p직계자식</p>
+        <p>p직계자식</p>
+        <b>b직계자식</b>
+        <div>
+          <p>p자식</p>
+          <p>p자식</p>
+        </div>
+      </div>
+      <input type="text" />
+    </ul>
+  </body>
+</html>
