@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 1px solid #777;
+        width: 500px;
+        margin-bottom: 10px;
+        /* float을 그냥 적용시키면 생각한 디자인이 안나오고 망가짐 */
+        /* 자식을 float 했으면 감싸줄 부모영역에 둘 중 택1 하여 선언 */
+        /* 1. overflow: hidden; */
+        /* overflow: hidden; */
+      }
+      /* 2. 가상선택자 : after content, display, clear 등을 다음과 같이 선언 */
+      /* 둘의 차이점이 분명 존재함 ( 1번방법은 나중 dropbox 기능이 안된다고 하심) */
+      .box::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .box > div {
+        float: left;
+        width: 25%;
+        border: 1px solid #777;
+        box-sizing: border-box;
+      }
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .box2 {
+        border: 1px solid #777;
+        width: 500px;
+        /* overflow : hidden 은 부모쪽에 선언해준다 */
+        overflow: hidden;
+      }
+      .box2 > li {
+        float: right;
+
+        border: 1px solid #777;
+        width: 20%;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>박스1</div>
+      <div>박스2</div>
+      <div>박스3</div>
+      <div>박스4</div>
+    </div>
+
+    <ul class="box2">
+      <li>박스1</li>
+      <li>박스2</li>
+      <li>박스3</li>
+      <li>박스4</li>
+      <li>박스5</li>
+    </ul>
+  </body>
+</html>

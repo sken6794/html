@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 기본적으로 전체에 패딩,마진을 없애주고 하는게 낫다 */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      ul,
+      li {
+        list-style: none; /* list-style도 그냥 없애는게 낫다 */
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .gnb > li {
+        display: inline-block;
+        /* hover로 인해 높이가 움직이는걸 방지하는 방법 2가지 */
+        /* 1. li태그의 높이를 알맞은 값으로 지정해놓는다. */
+        /* height: 64px; */
+      }
+      .gnb > li > a {
+        display: block; /* 블럭으로 바꿔주면 너비, 높이 지정 가능 */
+
+        color: aliceblue;
+        text-decoration: none;
+        padding: 20px 10px; /* 패딩으로도 텍스트를 중앙에 맞춰줄 수 있다 */
+        /* 2. a태그의 높이를 지정하여 패딩,border를 높이에 포함시키는 방법 */
+        height: 60px;
+        box-sizing: border-box;
+      }
+      .gnb-box {
+        text-align: center;
+        background-color: #000;
+      }
+      .gnb > li > a:hover {
+        border-bottom: 3px solid #fff;
+      }
+      section {
+        margin-top: 80px;
+      }
+      .box {
+        width: 1080px;
+        margin: 0 auto;
+      }
+      .box > .a1 {
+        border: 1px solid #777;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="gnb-box">
+        <ul class="gnb">
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">메뉴</a></li>
+          <li><a href="#">메뉴</a></li>
+        </ul>
+      </nav>
+    </header>
+    <article>
+      <img src="168681302885544182.avif" alt="" />
+    </article>
+    <section>
+      <div class="box">
+        <h3>오늘의 발견</h3>
+        <div class="a1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+          necessitatibus quo hic! Dicta ratione odit quam veniam assumenda
+          ducimus, doloremque, illo neque maxime quasi nisi quo iusto veritatis
+          laborum totam.
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
