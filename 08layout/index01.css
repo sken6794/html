@@ -1,0 +1,126 @@
+@import url(reset.css);
+
+/* header */
+#main-header {
+  width: 960px;
+  margin: 0 auto;
+
+  height: 160px;
+  position: relative;
+}
+.main-gnb {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-gnb > .box {
+  overflow: hidden;
+}
+.main-gnb > .box > li {
+  float: left;
+  border: 1px solid #777;
+  padding: 2px 5px;
+}
+.main-gnb > .box > li:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+.main-gnb > .box > li:last-child {
+  border-radius: 0px 10px 10px 0;
+}
+.main-gnb > .box > li:hover {
+  background: #333;
+  color: aliceblue;
+}
+.title {
+  position: absolute;
+  left: 10px;
+  top: 50px;
+}
+.sub-gnb {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+.sub-gnb > .box {
+  overflow: hidden;
+}
+.sub-gnb > .box > li {
+  float: left;
+  border: 1px solid #777;
+  padding: 2px 5px;
+}
+.sub-gnb > .box > li:first-child {
+  border-radius: 10px 0px 0px 10px;
+}
+.sub-gnb > .box > li:last-child {
+  border-radius: 0px 10px 10px 0;
+}
+.sub-gnb > .box > li:hover {
+  background: #333;
+  color: aliceblue;
+}
+/* main */
+#main_content {
+  width: 960px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+#main_content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.main_section {
+  width: 750px;
+  float: left;
+}
+.main_section > .box {
+  border: 1px solid #777;
+  padding: 20px;
+  margin: 0px 0px 10px;
+}
+.main_article {
+  width: 200px;
+  float: right;
+  border: 1px solid #777;
+}
+.main_article > .btn_area {
+  overflow: hidden;
+}
+.main_article > .btn_area > .left {
+  float: left;
+  width: 50%;
+  text-align: center;
+  background-color: thistle;
+  padding: 5px 0;
+}
+.tab_list li {
+  padding: 10px;
+}
+.tab_list li a {
+  overflow: hidden;
+  display: block;
+}
+.tab_list li a .thumbnail {
+  float: left;
+}
+.tab_list li a .description {
+  float: left;
+  margin-left: 10px;
+}
+.tab_list li a .description strong {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  width: 120px;
+  overflow: hidden;
+}
+/* footer */
+#main_footer {
+  border: 1px solid #777;
+  text-align: center;
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
