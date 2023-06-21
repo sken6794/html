@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link 순서도 중요함 제이쿼리가 부트js 보다 위에 있어야함 -->
+    <!-- 부트스트랩 css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- jQeury -->
+    <script src="js/jquery.js"></script>
+    <!-- 부트스트랩js -->
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger">Action</button>
+      <button
+        type="button"
+        class="btn btn-danger dropdown-toggle"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <span class="caret"></span>
+        <span class="sr-only">Toggle Dropdown</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+    <div class="dropdown">
+      <button
+        class="btn btn-primary dropdown-toggle"
+        type="button"
+        data-toggle="dropdown"
+      >
+        Dropdown Example <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+      </ul>
+    </div>
+    <hr />
+    <h3>그리드시스템</h3>
+    <!-- container는 양옆 여백, container-fluid는 전체 영역 -->
+
+    <style>
+      .back {
+        border: 1px solid #777;
+      }
+    </style>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 back">d</div>
+        <div class="col-sm-6 col-md-4 back">d</div>
+        <div class="col-sm-6 col-md-4 back">d</div>
+      </div>
+    </div>
+    <!-- md 이상에서 4등분, sm 이상에서 3등분 -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-sm-4 back">box</div>
+        <div class="col-lg-3 col-sm-4 back">box</div>
+        <div class="col-lg-3 col-sm-4 back">box</div>
+        <div class="col-lg-3 col-sm-4 back">box</div>
+      </div>
+    </div>
+    <!-- 휴대폰(xs - 1), 브라우저(sm - 4) 사이즈를 고려한 반응형 -->
+    <hr />
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 back">박스</div>
+        <div class="col-xs-6 col-sm-3 back">박스</div>
+        <div class="col-xs-6 col-sm-3 back">박스</div>
+        <div class="col-xs-12 col-sm-3 back">박스</div>
+      </div>
+    </div>
+  </body>
+</html>
