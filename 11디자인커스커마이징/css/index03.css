@@ -1,0 +1,54 @@
+@import url(reset.css);
+.my-title {
+  padding: 20px 0;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  font-size: 30px;
+}
+.my-title span {
+  font-size: 19px;
+}
+.prod1 {
+  font-size: 24px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 500;
+}
+.prod2 {
+  font-size: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.prod3 {
+  padding-top: 15px;
+  line-height: 10px;
+}
+.btn-box {
+  overflow: hidden;
+  padding: 10px 0;
+}
+.info .box1 button:nth-child(1) {
+  width: 50%;
+  float: left;
+  height: 60px;
+}
+.info .box1 button:nth-child(2) {
+  width: 50%;
+  float: left;
+  height: 60px;
+}
+.info .box1 {
+  padding-top: 129px;
+}
+.price-box {
+  overflow: hidden;
+}
+.price-box span {
+  float: left;
+  font-size: 18px;
+}
+.price-box strong {
+  float: right;
+  font-size: 30px;
+}
